@@ -1,6 +1,6 @@
 package threadexercicio5;
 
-public class Impressora extends Thread {
+public class Impressora  implements Runnable {
 
    private Armazena objCompartilhado;
 

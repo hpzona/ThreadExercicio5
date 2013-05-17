@@ -8,8 +8,11 @@ public class Principal {
    Contador contador = new Contador(objCompartilhado);
    Impressora impressora = new Impressora(objCompartilhado);
    
-   contador.start();
-   impressora.start();
+   Thread cont = new Thread(contador);
+   Thread imp  = new Thread(impressora);
+   
+   cont.start();
+   imp.start();
    
    }
 }
